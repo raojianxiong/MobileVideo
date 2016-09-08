@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+<TextView
+    android:id="@+id/click_add_all"
+    android:text="点击加载全部"
+    android:textColor="#8e3838"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>

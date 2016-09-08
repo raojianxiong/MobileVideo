@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_player_loading_background"
+    tools:context="com.example.project_two_video.VideoActivity">
+<!--<SurfaceView-->
+    <!--android:keepScreenOn="true"-->
+    <!--android:id="@+id/video_suface"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp" />-->
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<WebView-->
+        <!--android:id="@+id/video_suface"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp">-->
+
+    <!--</WebView>-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageButton
+           android:clickable="true"
+           android:id="@+id/btn_play_pre"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@mipmap/btn_play_pre"/>
+        <ImageButton
+            android:clickable="true"
+            android:background="@drawable/video_play"
+            android:id="@+id/btn_play_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:clickable="true"
+            android:background="@mipmap/btn_play_next"
+            android:id="@+id/btn_play_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

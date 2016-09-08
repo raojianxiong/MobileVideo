@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.project_two_video.MainActivity">
+<view.MyViewPager
+    android:id="@+id/activity_main_viewPage"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1">
+
+</view.MyViewPager>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/main_page"
+            android:text="首页"
+            android:drawableTop="@drawable/home_selected"
+            style="@style/BottomStyle" />
+        <RadioButton
+            android:id="@+id/main_local"
+            android:drawableTop="@drawable/local_selected"
+            style="@style/BottomStyle"
+            android:text="本地"/>
+        <RadioButton
+            android:id="@+id/main_search"
+            android:drawableTop="@drawable/search_selected"
+            style="@style/BottomStyle"
+            android:text="搜索"/>
+        <RadioButton
+            android:id="@+id/main_history"
+            android:drawableTop="@drawable/history_selected"
+            style="@style/BottomStyle"
+            android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>
