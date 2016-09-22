@@ -44,7 +44,8 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_page);
 
-        Vitamio.isInitialized(this);
+//        Vitamio.isInitialized(this);
+        Vitamio.initialize(this);
 
         initViews();
 

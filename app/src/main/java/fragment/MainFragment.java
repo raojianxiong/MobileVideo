@@ -189,7 +189,7 @@ public class MainFragment extends Fragment {
                     handler.sendEmptyMessageDelayed(0,2000);
                     break;
             }
-            return false;
+            return true;
         }
     }
 
