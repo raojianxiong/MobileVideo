@@ -88,6 +88,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_play_pre:
+                pre();
                 break;
             case R.id.btn_play_start:
                 System.out.println("执行start");
@@ -105,6 +106,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 }
                 break;
             case R.id.btn_play_next:
+                next();
                 break;
         }
     }

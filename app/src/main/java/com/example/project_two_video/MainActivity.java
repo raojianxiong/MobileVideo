@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
     private void getServerData(){
         instance = SingleInstance.newInstance();
         initViews();
+        //时光影院
         RequestParams params = new RequestParams("http://api.m.mtime.cn/PageSubArea/TrailerList.api");
         x.http().post(params, new Callback.CommonCallback<String>() {
             @Override

@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -165,6 +166,7 @@ public class MainFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), VideoActivity.class);
                 intent.putExtra("flag",1);
                 startActivity(intent);
+                Log.d("跳转到播放页面","跳转到播放页面");
             }
         });
 
